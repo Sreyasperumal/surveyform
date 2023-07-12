@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="top">
+    <form action="/action_page.php">
+        <h2>Name:</h2>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <h2>Email:</h2><br>
+        <label for="email">email: </label>
+        <input type="email" id="email" name="email"><br><br>
+
+      </form></div>
+      <h2>Experience:</h2>
+      <form class="rating">
+        <label>
+          <input type="radio" name="stars" value="1" />
+          <span class="fa fa-star icon"></span>
+        </label>
+        <label>
+          <input type="radio" name="stars" value="2" />
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+        </label>
+        <label>
+          <input type="radio" name="stars" value="3" />
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>   
+        </label>
+        <label>
+          <input type="radio" name="stars" value="4" />
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+        </label>
+        <label>
+          <input type="radio" name="stars" value="5" />
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+        </label>
+      </form>
+        <p>Overall, how could you experience with us</p>
+        <h2>How satisfied are you with</h2>
+        <div class="form-field">
+           <name>Purchase</name><br>
+            <input id="option1" type="checkbox" name="opt"/>
+            <label for="option1">most unsatisfied</label>
+            <input id="option2" type="checkbox" name="opt"/>
+            <label for="option2">unsatisfied</label>
+            <input id="option3" type="checkbox" name="opt"/>
+            <label for="option3">neutral</label>
+            <input id="option4" type="checkbox" name="opt"/>
+            <label for="option4">satisfied</label><br><br>
+            <name>Service</name><br>
+            <input id="option1" type="checkbox" name="opt"/>
+            <label for="option1">most unsatisfied</label>
+            <input id="option2" type="checkbox" name="opt"/>
+            <label for="option2">unsatisfied</label>
+            <input id="option3" type="checkbox" name="opt"/>
+            <label for="option3">neutral</label>
+            <input id="option4" type="checkbox" name="opt"/>
+            <label for="option4">satisfied</label><br><br>
+            <name> Overall Company</name><br>
+            <input id="option1" type="checkbox" name="opt"/>
+            <label for="option1">most unsatisfied</label>
+            <input id="option2" type="checkbox" name="opt"/>
+            <label for="option2">unsatisfied</label>
+            <input id="option3" type="checkbox" name="opt"/>
+            <label for="option3">neutral</label>
+            <input id="option4" type="checkbox" name="opt"/>
+            <label for="option4">satisfied</label>
+        </div><br>
+        <h2>How likely you to</h2>
+        <div class="form-field2">
+          <name>Buy from us again</name><br>
+          <input id="option1" type="checkbox" name="opt"/>
+          <label for="option1">very unlikely</label>
+          <input id="option2" type="checkbox" name="opt"/>
+          <label for="option2">unlikely</label>
+          <input id="option3" type="checkbox" name="opt"/>
+          <label for="option3">neutral</label>
+          <input id="option4" type="checkbox" name="opt"/>
+          <label for="option4">likely</label><br><br>
+          <name>Recommend our products to others</name><br>
+          <input id="option1" type="checkbox" name="opt"/>
+          <label for="option1">very unlikely</label>
+          <input id="option2" type="checkbox" name="opt"/>
+          <label for="option2">unlikely</label>
+          <input id="option3" type="checkbox" name="opt"/>
+          <label for="option3">neutral</label>
+          <input id="option4" type="checkbox" name="opt"/>
+          <label for="option4">likely</label><br><br>
+          <name> Recommend our company to others</name><br>
+          <input id="option1" type="checkbox" name="opt"/>
+          <label for="option1">very unlikely</label>
+          <input id="option2" type="checkbox" name="opt"/>
+          <label for="option2">unlikely</label>
+          <input id="option3" type="checkbox" name="opt"/>
+          <label for="option3">neutral</label>
+          <input id="option4" type="checkbox" name="opt"/>
+          <label for="option4">likely</label>
+
+        </div><br>
+        <h2>Additional comments or suggestions</h2>
+<div class="box">
+  <label for="content"></label>
+        <input type="text" id="content" name="content">
+</div><br>
+<form action="result.js">
+  <input type="submit" value="submit">
+</form>
+      
+</body>
+</html>
